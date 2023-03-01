@@ -7,7 +7,8 @@ intents:
   - deny
   - mood_great
   - mood_unhappy
-  - bot_challenge
+  - bot_challenges
+  - fee_payment
 
 responses:
   utter_greet:
@@ -27,7 +28,7 @@ responses:
   - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "I am a bot, powered by Rasa by group 2."
 
 session_config:
   session_expiration_time: 60

@@ -91,3 +91,16 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: fee_payment
+  examples: |
+    - what is the deadline for my fee payment?
+    - when is my fee deadline ?
+    - fee deadline ?
+    - what is the last day for my fee payment?
+    - How much do i owe the university?
+    - Can i pay my fees in installments?
+    - How many installments are pending to pay from my end?
+    - What is my fee liability?
+    - Can i extend my deadline?
+
