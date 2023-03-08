@@ -34,6 +34,9 @@ stories:
   - intent: greet
   - action: utter_greet
   - intent: fee_payment
-  - action: utter_iamabot
+  - action: utter_year_details
+  - action: utter_fee_store
+  # - intent: fee_payment
+  - action: utter_fee_store
   - intent: deny
   - action: utter_goodbye

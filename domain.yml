@@ -10,9 +10,24 @@ intents:
   - bot_challenges
   - fee_payment
 
+enities:
+  - year
+
+slots:
+  module:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: year
+
+
 responses:
   utter_greet:
   - text: "Hey! Hey ! Hey !"
+    buttons:
+    - title: "Fee Deadline"
+      payload: "/fee"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -29,6 +44,15 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa by group 2."
+
+  utter_fee_details:
+  - text: "Please follow the link to get all details of fee payment"
+  
+  utter_year_details:
+  - text: What is your Year?
+
+  utter_fee_store:
+  - text: Ok, so you are a year {year} student?
 
 session_config:
   session_expiration_time: 60
